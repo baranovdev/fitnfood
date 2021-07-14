@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_infocollector"
+    app:startDestination="@id/infoCollectorNameFragment">
+
+    <fragment
+        android:id="@+id/infoCollectorNameFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorNameFragment"
+        android:label="InfoCollectorNameFragment">
+        <action
+            android:id="@+id/show_collector_age"
+            app:destination="@id/infoCollectorAgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoCollectorAgeFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorAgeFragment"
+        android:label="InfoCollectorAgeFragment">
+        <action
+            android:id="@+id/show_collector_weight"
+            app:destination="@id/infoCollectorWeightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoCollectorGenderFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorGenderFragment"
+        android:label="fragment_info_collector_gender"
+        tools:layout="@layout/fragment_info_collector_gender">
+        <action
+            android:id="@+id/show_collector_stamina"
+            app:destination="@id/infoCollectorStaminaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoCollectorStaminaFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorStaminaFragment"
+        android:label="fragment_info_collector_stamina"
+        tools:layout="@layout/fragment_info_collector_stamina" />
+    <fragment
+        android:id="@+id/infoCollectorWeightFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorWeightFragment"
+        android:label="fragment_info_collector_weight"
+        tools:layout="@layout/fragment_info_collector_weight">
+        <action
+            android:id="@+id/show_collector_gender"
+            app:destination="@id/infoCollectorGenderFragment" />
+    </fragment>
+</navigation>

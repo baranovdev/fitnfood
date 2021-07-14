@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fit N Food</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_weight">Your weight</string>
+    <string name="next">next</string>
+    <string name="your_gender">Your gender</string>
+    <string name="how_old_are_you">How old are you ?</string>
+    <string name="your_name">Your name</string>
+</resources>
