@@ -23,8 +23,8 @@ class InfoCollectorNameFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(InfoCollectorViewModel::class.java)
+        super.onViewCreated(view, savedInstanceState)
+        viewModel = ViewModelProvider(requireActivity()).get(InfoCollectorViewModel::class.java)
 
         val nameInput = view.findViewById<TextInputLayout>(R.id.collector_name)
         val button = view.findViewById<Button>(R.id.button_collector_to_age)
@@ -34,7 +34,7 @@ class InfoCollectorNameFragment : Fragment() {
                 "Should not be empty"
             else {
                 viewModel.nameC = nameInput?.editText?.text.toString()
-                findNavController().navigate(R.id.show_collector_age)
+                findNavController().navigate(R.id.show_collector_difficulty)
             }
         }
 

@@ -10,38 +10,12 @@
         android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorNameFragment"
         android:label="InfoCollectorNameFragment">
         <action
-            android:id="@+id/show_collector_age"
-            app:destination="@id/infoCollectorAgeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/infoCollectorAgeFragment"
-        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorAgeFragment"
-        android:label="InfoCollectorAgeFragment">
-        <action
-            android:id="@+id/show_collector_weight"
+            android:id="@+id/show_collector_difficulty"
             app:destination="@id/infoCollectorWeightFragment" />
     </fragment>
     <fragment
-        android:id="@+id/infoCollectorGenderFragment"
-        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorGenderFragment"
-        android:label="fragment_info_collector_gender"
-        tools:layout="@layout/fragment_info_collector_gender">
-        <action
-            android:id="@+id/show_collector_stamina"
-            app:destination="@id/infoCollectorStaminaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/infoCollectorStaminaFragment"
-        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorStaminaFragment"
-        android:label="fragment_info_collector_stamina"
-        tools:layout="@layout/fragment_info_collector_stamina" />
-    <fragment
         android:id="@+id/infoCollectorWeightFragment"
-        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoCollectorWeightFragment"
+        android:name="by.baranovdev.fitnfood.activities.ui.infocollector.InfoDifficultyWeightFragment"
         android:label="fragment_info_collector_weight"
-        tools:layout="@layout/fragment_info_collector_weight">
-        <action
-            android:id="@+id/show_collector_gender"
-            app:destination="@id/infoCollectorGenderFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_info_collector_weight"/>
 </navigation>

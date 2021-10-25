@@ -9,6 +9,8 @@ interface ExerciseDao {
     @Insert
     fun insert(exercise: Exercise)
 
-    @Query("SELECT * FROM user_table")
+    @Query("SELECT * FROM exercise_table")
     suspend fun getAll(): List<Exercise>
+
+
 }

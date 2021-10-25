@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "550681102007",
-    "project_id": "fit-n-food",
-    "storage_bucket": "fit-n-food.appspot.com"
+    "project_number": "22857356172",
+    "project_id": "fit-n-food-d756c",
+    "storage_bucket": "fit-n-food-d756c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:550681102007:android:4ce506874f7e672b1faf32",
+        "mobilesdk_app_id": "1:22857356172:android:4fb1e579935a8820203ca9",
         "android_client_info": {
           "package_name": "by.baranovdev.fitnfood"
         }
       },
       "oauth_client": [
         {
-          "client_id": "550681102007-73c1b016a17d3r76tgrnnmbct9is401c.apps.googleusercontent.com",
+          "client_id": "22857356172-giibom9b3a9reuvblbnecceaib8c95b3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdEHeuRCQ3LqK8AIeUh0KgABPGoq99bzc"
+          "current_key": "AIzaSyDkCtFDxjRhLb-WQgDzeKU-YSCYuBIOMBE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "550681102007-73c1b016a17d3r76tgrnnmbct9is401c.apps.googleusercontent.com",
+              "client_id": "22857356172-giibom9b3a9reuvblbnecceaib8c95b3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

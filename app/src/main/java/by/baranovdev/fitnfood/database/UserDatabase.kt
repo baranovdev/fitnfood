@@ -4,13 +4,16 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import by.baranovdev.fitnfood.database.dao.ExerciseDao
-import by.baranovdev.fitnfood.database.entity.Exercise
+import by.baranovdev.fitnfood.database.dao.ProgramDao
+import by.baranovdev.fitnfood.database.dao.UserDao
+import by.baranovdev.fitnfood.database.entity.Program
+import by.baranovdev.fitnfood.database.entity.User
 
-@Database(entities = [Exercise::class], version = 1)
+@Database(entities = [Program::class, User::class], version = 3)
 abstract class UserDatabase : RoomDatabase() {
 
-    abstract fun userDao(): ExerciseDao
+    abstract fun userDao(): UserDao
+    abstract fun programDao(): ProgramDao
 
     companion object {
         private var INSTANCE: UserDatabase? = null
@@ -21,7 +24,7 @@ abstract class UserDatabase : RoomDatabase() {
 
         fun getDatabase(context: Context): UserDatabase {
             if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(context, UserDatabase::class.java, "database").build()
+                INSTANCE = Room.databaseBuilder(context, UserDatabase::class.java, "app_database").build()
             }
             return INSTANCE as UserDatabase
         }
